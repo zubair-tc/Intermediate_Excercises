@@ -18,12 +18,12 @@
 
         public int Votecount { get { return votecount; } }
 
-        public void up_Vote()
+        public void UpVote()
         {
             votecount++;
         }
         //
-        public void down_Vote()
+        public void DownVote()
         {
             votecount--;
         }

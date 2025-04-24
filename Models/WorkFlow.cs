@@ -4,16 +4,16 @@ namespace Intermediate_Excercises.Models
 {
     internal class WorkFlow
     {
-        private readonly List<IActivity> activities = new List<IActivity>();
+        private readonly List<IActivity> _activities = new List<IActivity>();
 
         public void AddActivity(IActivity activity)
         {
-            activities.Add(activity);
+            _activities.Add(activity);
         }
 
         public IEnumerable<IActivity> GetActivities()
         {
-            return activities;
+            return _activities;
         }
     }
 }

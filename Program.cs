@@ -8,14 +8,13 @@ namespace Intermediate_Course
         static void Main()
         {
             var post = new Post("Work", "At Software house");
-            post.up_Vote();
-            post.up_Vote();
-            post.up_Vote();
-            post.down_Vote();
-            post.down_Vote();
+            post.UpVote();
+            post.UpVote();
+            post.UpVote();
+            post.DownVote();
+            post.DownVote();
             Console.WriteLine($"Title: {post.Title}\n Description:{post.Description}\n Vote:{post.votecount} ");
-            var obj = new StopWatch();
-
+        
             var stack = new Stack();
             stack.Push(1);
             stack.Push(2);
@@ -29,6 +28,8 @@ namespace Intermediate_Course
 
             var engine = new Workflow_Engine();
             engine.Run(workflow);
+
+            var obj = new StopWatch();
 
             while (true)
             {
